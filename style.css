@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
+
+#card{
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 60px 80px;
+    margin-top: 20px;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+input {
+    padding: 9px;
+    font-size: 12px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+}
+
+button {
+    border-radius: 3px;
+        border: none;
+        padding: 8px;
+        background-color: black;
+        color: white;
+}
+
+#transition {
+    animation: changeBg 10s linear infinite;
+    font-size: 100px;
+    margin-top: 40px;
+    width:fit-content;
+    border-radius: 5px;
+}
+
+p {
+    align-items: center;
+    color: white;
+}
+
+@keyframes changeBg {
+    10% {
+        background-color: #ff4136;
+    }
+    30% {
+         background-color: #39cccc;
+    }
+    50% {
+        background-color: #ffdc00;
+    }
+    70% {
+        background-color: #0074d9;
+    }
+    90% {
+        background-color: #f012be;
+    }
+}
+
+.gradient {
+    -webkit-animation: bgcolor 10s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
